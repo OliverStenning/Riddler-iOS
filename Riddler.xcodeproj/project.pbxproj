@@ -1,0 +1,795 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8FD4D269227A3463DCB02D79 /* Pods_Riddler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D31A8880939AE0456CD5898 /* Pods_Riddler.framework */; };
+		DC044FB09302FCD413FDF614 /* Pods_Riddler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B099384CB453747BB0787FE /* Pods_Riddler.framework */; };
+		F214454527E009F100E8890F /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F214454427E009F100E8890F /* Keys.swift */; };
+		F214455727E267C500E8890F /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F214455627E267C500E8890F /* BackButton.swift */; };
+		F214455927E2694000E8890F /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = F214455827E2694000E8890F /* Background.swift */; };
+		F214455B27E276F500E8890F /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F214455A27E276F500E8890F /* IconButton.swift */; };
+		F214455D27E2778600E8890F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F214455C27E2778600E8890F /* Extensions.swift */; };
+		F214455F27E27DCC00E8890F /* TextIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F214455E27E27DCC00E8890F /* TextIconButton.swift */; };
+		F214456527E2B04800E8890F /* trophy.json in Resources */ = {isa = PBXBuildFile; fileRef = F214456427E2B04800E8890F /* trophy.json */; };
+		F214456727E4E5B400E8890F /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = F214456627E4E5B400E8890F /* Toast.swift */; };
+		F216F61427B40F7D00DA02D0 /* RiddlerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F216F61327B40F7D00DA02D0 /* RiddlerApp.swift */; };
+		F216F61827B40F7F00DA02D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F216F61727B40F7F00DA02D0 /* Assets.xcassets */; };
+		F216F61B27B40F7F00DA02D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F216F61A27B40F7F00DA02D0 /* Preview Assets.xcassets */; };
+		F216F64327B4161400DA02D0 /* Riddle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F216F64227B4161400DA02D0 /* Riddle.swift */; };
+		F216F64527B4162100DA02D0 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = F216F64427B4162100DA02D0 /* Player.swift */; };
+		F216F64727B4163100DA02D0 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F216F64627B4163100DA02D0 /* GameViewModel.swift */; };
+		F216F64B27B4166000DA02D0 /* HintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F216F64A27B4166000DA02D0 /* HintView.swift */; };
+		F216F64D27B4167100DA02D0 /* RiddleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F216F64C27B4167100DA02D0 /* RiddleView.swift */; };
+		F216F64F27B4167E00DA02D0 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F216F64E27B4167E00DA02D0 /* MenuView.swift */; };
+		F216F65127B4168800DA02D0 /* CorrectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F216F65027B4168800DA02D0 /* CorrectView.swift */; };
+		F216F65327B4168F00DA02D0 /* VictoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F216F65227B4168F00DA02D0 /* VictoryView.swift */; };
+		F216F65527B416B100DA02D0 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F216F65427B416B100DA02D0 /* ButtonStyles.swift */; };
+		F216F65727B416B900DA02D0 /* TextStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F216F65627B416B900DA02D0 /* TextStyles.swift */; };
+		F216F65927B416C100DA02D0 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F216F65827B416C100DA02D0 /* Animations.swift */; };
+		F216F65B27B416CE00DA02D0 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F216F65A27B416CE00DA02D0 /* LottieView.swift */; };
+		F216F65D27B416E500DA02D0 /* BundleDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F216F65C27B416E500DA02D0 /* BundleDecodable.swift */; };
+		F21BBAFC27E7E04E001FAA31 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21BBAFB27E7E04E001FAA31 /* GameKit.framework */; };
+		F21BBAFF27E7E972001FAA31 /* AuthenticateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21BBAFE27E7E972001FAA31 /* AuthenticateView.swift */; };
+		F21BBB0127E7EDA8001FAA31 /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21BBB0027E7EDA8001FAA31 /* LeaderboardView.swift */; };
+		F21BBB0327EA457D001FAA31 /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21BBB0227EA457D001FAA31 /* AchievementsView.swift */; };
+		F21BBB0527EA59B6001FAA31 /* GameKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21BBB0427EA59B6001FAA31 /* GameKitManager.swift */; };
+		F21BBB0727EB5919001FAA31 /* TestVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21BBB0627EB5919001FAA31 /* TestVariables.swift */; };
+		F230AF51287E3F6200FF7769 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F230AF50287E3F6200FF7769 /* Analytics.swift */; };
+		F23FDD7927D840CA008C20A3 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F23FDD7827D840CA008C20A3 /* Podfile */; };
+		F23FDD7B27D842B1008C20A3 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23FDD7A27D842B1008C20A3 /* AppTrackingTransparency.framework */; };
+		F23FDD8227D90133008C20A3 /* InterstitialAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FDD8127D90133008C20A3 /* InterstitialAd.swift */; };
+		F23FDD8827D9073A008C20A3 /* RewardedAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FDD8727D9073A008C20A3 /* RewardedAd.swift */; };
+		F23FDD8A27D90940008C20A3 /* FullscreenModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FDD8927D90940008C20A3 /* FullscreenModifier.swift */; };
+		F274B5D127DD089600D620CA /* AdFailedDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F274B5D027DD089600D620CA /* AdFailedDialog.swift */; };
+		F281F60127D98F5D000790B4 /* BasicDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F281F60027D98F5D000790B4 /* BasicDialog.swift */; };
+		F281F60327DA7066000790B4 /* ConsentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F281F60227DA7066000790B4 /* ConsentManager.swift */; };
+		F281F60527DBA27C000790B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F281F60427DBA27C000790B4 /* GoogleService-Info.plist */; };
+		F281F60827DBA40F000790B4 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F281F60727DBA40F000790B4 /* FirebaseAnalytics */; };
+		F281F60A27DBA40F000790B4 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = F281F60927DBA40F000790B4 /* FirebaseCrashlytics */; };
+		F29A8A2F27B460AE00EEF7A3 /* Abel-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F29A8A2D27B460AE00EEF7A3 /* Abel-Regular.ttf */; };
+		F29A8A3027B460AE00EEF7A3 /* Teko-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F29A8A2E27B460AE00EEF7A3 /* Teko-Regular.ttf */; };
+		F29A8A3327B48B0000EEF7A3 /* riddles.json in Resources */ = {isa = PBXBuildFile; fileRef = F29A8A3227B48B0000EEF7A3 /* riddles.json */; };
+		F29A8A3627B6F07400EEF7A3 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = F29A8A3527B6F07400EEF7A3 /* Lottie */; };
+		F29A8A3827B6F40B00EEF7A3 /* confetti.json in Resources */ = {isa = PBXBuildFile; fileRef = F29A8A3727B6F40B00EEF7A3 /* confetti.json */; };
+		F29A8A3A27BDBD2000EEF7A3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29A8A3927BDBD2000EEF7A3 /* SettingsView.swift */; };
+		F2A398E727E60E4B002ADCF3 /* TimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A398E627E60E4B002ADCF3 /* TimeFormatter.swift */; };
+		F2BBD45A27DEAB5600B23075 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BBD45927DEAB5600B23075 /* StatsView.swift */; };
+		F2BBD45C27DFFE7200B23075 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BBD45B27DFFE7200B23075 /* Stats.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		006E382FF0D494352903621A /* Pods-RiddlerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiddlerTests.release.xcconfig"; path = "Target Support Files/Pods-RiddlerTests/Pods-RiddlerTests.release.xcconfig"; sourceTree = "<group>"; };
+		0A0C4E21975D90F60862142D /* Pods-Riddler-RiddlerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Riddler-RiddlerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Riddler-RiddlerUITests/Pods-Riddler-RiddlerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5B099384CB453747BB0787FE /* Pods_Riddler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Riddler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B3BA99AC2F43B3FE22A1713 /* Pods-Riddler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Riddler.release.xcconfig"; path = "Target Support Files/Pods-Riddler/Pods-Riddler.release.xcconfig"; sourceTree = "<group>"; };
+		5D31A8880939AE0456CD5898 /* Pods_Riddler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Riddler.framework; path = "../../../Library/Developer/Xcode/DerivedData/Riddler-bfrkrrewyoihvvhkyfksgqozdhbp/Build/Products/Debug-iphoneos/Pods_Riddler.framework"; sourceTree = SOURCE_ROOT; };
+		5DAB57D67E7BF739CF9A576A /* Pods_Riddler_RiddlerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Riddler_RiddlerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		699F35ED9EDD5BF816B60AE0 /* Pods-RiddlerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiddlerTests.debug.xcconfig"; path = "Target Support Files/Pods-RiddlerTests/Pods-RiddlerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A32E89ED8C85BDC56279202B /* Pods-Riddler-RiddlerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Riddler-RiddlerUITests.release.xcconfig"; path = "Target Support Files/Pods-Riddler-RiddlerUITests/Pods-Riddler-RiddlerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A52ABE1A28C8B47711BA04C0 /* Pods_RiddlerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RiddlerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F214454427E009F100E8890F /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		F214455627E267C500E8890F /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		F214455827E2694000E8890F /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		F214455A27E276F500E8890F /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
+		F214455C27E2778600E8890F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F214455E27E27DCC00E8890F /* TextIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextIconButton.swift; sourceTree = "<group>"; };
+		F214456427E2B04800E8890F /* trophy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trophy.json; sourceTree = "<group>"; };
+		F214456627E4E5B400E8890F /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		F216F61027B40F7D00DA02D0 /* Riddler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Riddler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F216F61327B40F7D00DA02D0 /* RiddlerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddlerApp.swift; sourceTree = "<group>"; };
+		F216F61727B40F7F00DA02D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F216F61A27B40F7F00DA02D0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F216F64227B4161400DA02D0 /* Riddle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Riddle.swift; sourceTree = "<group>"; };
+		F216F64427B4162100DA02D0 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		F216F64627B4163100DA02D0 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		F216F64A27B4166000DA02D0 /* HintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintView.swift; sourceTree = "<group>"; };
+		F216F64C27B4167100DA02D0 /* RiddleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddleView.swift; sourceTree = "<group>"; };
+		F216F64E27B4167E00DA02D0 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		F216F65027B4168800DA02D0 /* CorrectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectView.swift; sourceTree = "<group>"; };
+		F216F65227B4168F00DA02D0 /* VictoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VictoryView.swift; sourceTree = "<group>"; };
+		F216F65427B416B100DA02D0 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		F216F65627B416B900DA02D0 /* TextStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyles.swift; sourceTree = "<group>"; };
+		F216F65827B416C100DA02D0 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		F216F65A27B416CE00DA02D0 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		F216F65C27B416E500DA02D0 /* BundleDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleDecodable.swift; sourceTree = "<group>"; };
+		F21BBAFB27E7E04E001FAA31 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		F21BBAFE27E7E972001FAA31 /* AuthenticateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateView.swift; sourceTree = "<group>"; };
+		F21BBB0027E7EDA8001FAA31 /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
+		F21BBB0227EA457D001FAA31 /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
+		F21BBB0427EA59B6001FAA31 /* GameKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameKitManager.swift; sourceTree = "<group>"; };
+		F21BBB0627EB5919001FAA31 /* TestVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVariables.swift; sourceTree = "<group>"; };
+		F230AF50287E3F6200FF7769 /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
+		F23FDD7827D840CA008C20A3 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F23FDD7A27D842B1008C20A3 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
+		F23FDD8127D90133008C20A3 /* InterstitialAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialAd.swift; sourceTree = "<group>"; };
+		F23FDD8727D9073A008C20A3 /* RewardedAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardedAd.swift; sourceTree = "<group>"; };
+		F23FDD8927D90940008C20A3 /* FullscreenModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullscreenModifier.swift; sourceTree = "<group>"; };
+		F259BF981E79D62D50B11517 /* Pods-Riddler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Riddler.debug.xcconfig"; path = "Target Support Files/Pods-Riddler/Pods-Riddler.debug.xcconfig"; sourceTree = "<group>"; };
+		F274B5D027DD089600D620CA /* AdFailedDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdFailedDialog.swift; sourceTree = "<group>"; };
+		F281F60027D98F5D000790B4 /* BasicDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicDialog.swift; sourceTree = "<group>"; };
+		F281F60227DA7066000790B4 /* ConsentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentManager.swift; sourceTree = "<group>"; };
+		F281F60427DBA27C000790B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F29A8A2D27B460AE00EEF7A3 /* Abel-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Abel-Regular.ttf"; sourceTree = "<group>"; };
+		F29A8A2E27B460AE00EEF7A3 /* Teko-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-Regular.ttf"; sourceTree = "<group>"; };
+		F29A8A3127B4629800EEF7A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F29A8A3227B48B0000EEF7A3 /* riddles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = riddles.json; sourceTree = "<group>"; };
+		F29A8A3727B6F40B00EEF7A3 /* confetti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = confetti.json; sourceTree = "<group>"; };
+		F29A8A3927BDBD2000EEF7A3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F2A398E627E60E4B002ADCF3 /* TimeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatter.swift; sourceTree = "<group>"; };
+		F2BBD45927DEAB5600B23075 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		F2BBD45B27DFFE7200B23075 /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F216F60D27B40F7D00DA02D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F23FDD7B27D842B1008C20A3 /* AppTrackingTransparency.framework in Frameworks */,
+				F29A8A3627B6F07400EEF7A3 /* Lottie in Frameworks */,
+				F21BBAFC27E7E04E001FAA31 /* GameKit.framework in Frameworks */,
+				8FD4D269227A3463DCB02D79 /* Pods_Riddler.framework in Frameworks */,
+				F281F60A27DBA40F000790B4 /* FirebaseCrashlytics in Frameworks */,
+				F281F60827DBA40F000790B4 /* FirebaseAnalytics in Frameworks */,
+				DC044FB09302FCD413FDF614 /* Pods_Riddler.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F8D80E1D205462D74465C06 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F259BF981E79D62D50B11517 /* Pods-Riddler.debug.xcconfig */,
+				5B3BA99AC2F43B3FE22A1713 /* Pods-Riddler.release.xcconfig */,
+				0A0C4E21975D90F60862142D /* Pods-Riddler-RiddlerUITests.debug.xcconfig */,
+				A32E89ED8C85BDC56279202B /* Pods-Riddler-RiddlerUITests.release.xcconfig */,
+				699F35ED9EDD5BF816B60AE0 /* Pods-RiddlerTests.debug.xcconfig */,
+				006E382FF0D494352903621A /* Pods-RiddlerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B35DF931D4893002C1A30F22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F21BBAFB27E7E04E001FAA31 /* GameKit.framework */,
+				F23FDD7A27D842B1008C20A3 /* AppTrackingTransparency.framework */,
+				5D31A8880939AE0456CD5898 /* Pods_Riddler.framework */,
+				5DAB57D67E7BF739CF9A576A /* Pods_Riddler_RiddlerUITests.framework */,
+				A52ABE1A28C8B47711BA04C0 /* Pods_RiddlerTests.framework */,
+				5B099384CB453747BB0787FE /* Pods_Riddler.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F214455427E2670500E8890F /* Dialogs */ = {
+			isa = PBXGroup;
+			children = (
+				F274B5D027DD089600D620CA /* AdFailedDialog.swift */,
+				F281F60027D98F5D000790B4 /* BasicDialog.swift */,
+			);
+			path = Dialogs;
+			sourceTree = "<group>";
+		};
+		F214455527E267A500E8890F /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				F216F65627B416B900DA02D0 /* TextStyles.swift */,
+				F216F65427B416B100DA02D0 /* ButtonStyles.swift */,
+				F216F65827B416C100DA02D0 /* Animations.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		F216F60727B40F7D00DA02D0 = {
+			isa = PBXGroup;
+			children = (
+				F216F61227B40F7D00DA02D0 /* Riddler */,
+				F216F61127B40F7D00DA02D0 /* Products */,
+				6F8D80E1D205462D74465C06 /* Pods */,
+				B35DF931D4893002C1A30F22 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F216F61127B40F7D00DA02D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F216F61027B40F7D00DA02D0 /* Riddler.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F216F61227B40F7D00DA02D0 /* Riddler */ = {
+			isa = PBXGroup;
+			children = (
+				F281F60427DBA27C000790B4 /* GoogleService-Info.plist */,
+				F216F63D27B414CD00DA02D0 /* App */,
+				F216F64127B414F000DA02D0 /* Models */,
+				F216F63F27B414DF00DA02D0 /* Resources */,
+				F216F64027B414E900DA02D0 /* UI */,
+				F216F63E27B414D400DA02D0 /* Utilities */,
+			);
+			path = Riddler;
+			sourceTree = "<group>";
+		};
+		F216F61927B40F7F00DA02D0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F216F61A27B40F7F00DA02D0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F216F63D27B414CD00DA02D0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F29A8A3127B4629800EEF7A3 /* Info.plist */,
+				F216F61327B40F7D00DA02D0 /* RiddlerApp.swift */,
+				F23FDD7827D840CA008C20A3 /* Podfile */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F216F63E27B414D400DA02D0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F216F65C27B416E500DA02D0 /* BundleDecodable.swift */,
+				F2A398E627E60E4B002ADCF3 /* TimeFormatter.swift */,
+				F21BBB0627EB5919001FAA31 /* TestVariables.swift */,
+				F230AF50287E3F6200FF7769 /* Analytics.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F216F63F27B414DF00DA02D0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F216F61727B40F7F00DA02D0 /* Assets.xcassets */,
+				F216F65F27B4170300DA02D0 /* Fonts */,
+				F216F65E27B416FC00DA02D0 /* Lottie */,
+				F216F61927B40F7F00DA02D0 /* Preview Content */,
+				F29A8A3227B48B0000EEF7A3 /* riddles.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F216F64027B414E900DA02D0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F23FDD8027D90121008C20A3 /* Ads */,
+				F216F64827B4163E00DA02D0 /* Components */,
+				F214455427E2670500E8890F /* Dialogs */,
+				F21BBAFD27E7E947001FAA31 /* GameKit */,
+				F216F64927B4164500DA02D0 /* Screens */,
+				F214455527E267A500E8890F /* Styles */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F216F64127B414F000DA02D0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F216F64427B4162100DA02D0 /* Player.swift */,
+				F216F64627B4163100DA02D0 /* GameViewModel.swift */,
+				F216F64227B4161400DA02D0 /* Riddle.swift */,
+				F2BBD45B27DFFE7200B23075 /* Stats.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F216F64827B4163E00DA02D0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F216F65A27B416CE00DA02D0 /* LottieView.swift */,
+				F214455627E267C500E8890F /* BackButton.swift */,
+				F214455827E2694000E8890F /* Background.swift */,
+				F214455A27E276F500E8890F /* IconButton.swift */,
+				F214455C27E2778600E8890F /* Extensions.swift */,
+				F214455E27E27DCC00E8890F /* TextIconButton.swift */,
+				F214456627E4E5B400E8890F /* Toast.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F216F64927B4164500DA02D0 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F216F64A27B4166000DA02D0 /* HintView.swift */,
+				F216F64C27B4167100DA02D0 /* RiddleView.swift */,
+				F216F64E27B4167E00DA02D0 /* MenuView.swift */,
+				F216F65027B4168800DA02D0 /* CorrectView.swift */,
+				F216F65227B4168F00DA02D0 /* VictoryView.swift */,
+				F29A8A3927BDBD2000EEF7A3 /* SettingsView.swift */,
+				F2BBD45927DEAB5600B23075 /* StatsView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F216F65E27B416FC00DA02D0 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				F214456427E2B04800E8890F /* trophy.json */,
+				F29A8A3727B6F40B00EEF7A3 /* confetti.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		F216F65F27B4170300DA02D0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F29A8A2D27B460AE00EEF7A3 /* Abel-Regular.ttf */,
+				F29A8A2E27B460AE00EEF7A3 /* Teko-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F21BBAFD27E7E947001FAA31 /* GameKit */ = {
+			isa = PBXGroup;
+			children = (
+				F21BBAFE27E7E972001FAA31 /* AuthenticateView.swift */,
+				F21BBB0027E7EDA8001FAA31 /* LeaderboardView.swift */,
+				F21BBB0227EA457D001FAA31 /* AchievementsView.swift */,
+				F21BBB0427EA59B6001FAA31 /* GameKitManager.swift */,
+			);
+			path = GameKit;
+			sourceTree = "<group>";
+		};
+		F23FDD8027D90121008C20A3 /* Ads */ = {
+			isa = PBXGroup;
+			children = (
+				F23FDD8127D90133008C20A3 /* InterstitialAd.swift */,
+				F23FDD8727D9073A008C20A3 /* RewardedAd.swift */,
+				F23FDD8927D90940008C20A3 /* FullscreenModifier.swift */,
+				F281F60227DA7066000790B4 /* ConsentManager.swift */,
+				F214454427E009F100E8890F /* Keys.swift */,
+			);
+			path = Ads;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F216F60F27B40F7D00DA02D0 /* Riddler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F216F63427B40F7F00DA02D0 /* Build configuration list for PBXNativeTarget "Riddler" */;
+			buildPhases = (
+				3A79C29EEDBAB4A8A5C625A6 /* [CP] Check Pods Manifest.lock */,
+				F216F60C27B40F7D00DA02D0 /* Sources */,
+				F216F60D27B40F7D00DA02D0 /* Frameworks */,
+				F216F60E27B40F7D00DA02D0 /* Resources */,
+				2C784A00B11D9636F7CA75F1 /* [CP] Embed Pods Frameworks */,
+				F281F60C27DBA657000790B4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Riddler;
+			packageProductDependencies = (
+				F29A8A3527B6F07400EEF7A3 /* Lottie */,
+				F281F60727DBA40F000790B4 /* FirebaseAnalytics */,
+				F281F60927DBA40F000790B4 /* FirebaseCrashlytics */,
+			);
+			productName = Riddler;
+			productReference = F216F61027B40F7D00DA02D0 /* Riddler.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F216F60827B40F7D00DA02D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					F216F60F27B40F7D00DA02D0 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = F216F60B27B40F7D00DA02D0 /* Build configuration list for PBXProject "Riddler" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F216F60727B40F7D00DA02D0;
+			packageReferences = (
+				F29A8A3427B6F07400EEF7A3 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				F281F60627DBA40E000790B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = F216F61127B40F7D00DA02D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F216F60F27B40F7D00DA02D0 /* Riddler */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F216F60E27B40F7D00DA02D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F29A8A2F27B460AE00EEF7A3 /* Abel-Regular.ttf in Resources */,
+				F281F60527DBA27C000790B4 /* GoogleService-Info.plist in Resources */,
+				F216F61B27B40F7F00DA02D0 /* Preview Assets.xcassets in Resources */,
+				F29A8A3327B48B0000EEF7A3 /* riddles.json in Resources */,
+				F29A8A3827B6F40B00EEF7A3 /* confetti.json in Resources */,
+				F29A8A3027B460AE00EEF7A3 /* Teko-Regular.ttf in Resources */,
+				F23FDD7927D840CA008C20A3 /* Podfile in Resources */,
+				F216F61827B40F7F00DA02D0 /* Assets.xcassets in Resources */,
+				F214456527E2B04800E8890F /* trophy.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C784A00B11D9636F7CA75F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Riddler/Pods-Riddler-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Riddler/Pods-Riddler-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Riddler/Pods-Riddler-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A79C29EEDBAB4A8A5C625A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Riddler-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F281F60C27DBA657000790B4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F216F60C27B40F7D00DA02D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F23FDD8827D9073A008C20A3 /* RewardedAd.swift in Sources */,
+				F2A398E727E60E4B002ADCF3 /* TimeFormatter.swift in Sources */,
+				F29A8A3A27BDBD2000EEF7A3 /* SettingsView.swift in Sources */,
+				F21BBB0727EB5919001FAA31 /* TestVariables.swift in Sources */,
+				F216F65327B4168F00DA02D0 /* VictoryView.swift in Sources */,
+				F216F65D27B416E500DA02D0 /* BundleDecodable.swift in Sources */,
+				F216F65727B416B900DA02D0 /* TextStyles.swift in Sources */,
+				F216F65927B416C100DA02D0 /* Animations.swift in Sources */,
+				F216F64F27B4167E00DA02D0 /* MenuView.swift in Sources */,
+				F21BBB0527EA59B6001FAA31 /* GameKitManager.swift in Sources */,
+				F214456727E4E5B400E8890F /* Toast.swift in Sources */,
+				F21BBB0327EA457D001FAA31 /* AchievementsView.swift in Sources */,
+				F216F65127B4168800DA02D0 /* CorrectView.swift in Sources */,
+				F214455F27E27DCC00E8890F /* TextIconButton.swift in Sources */,
+				F274B5D127DD089600D620CA /* AdFailedDialog.swift in Sources */,
+				F214455B27E276F500E8890F /* IconButton.swift in Sources */,
+				F21BBB0127E7EDA8001FAA31 /* LeaderboardView.swift in Sources */,
+				F281F60327DA7066000790B4 /* ConsentManager.swift in Sources */,
+				F216F65527B416B100DA02D0 /* ButtonStyles.swift in Sources */,
+				F216F61427B40F7D00DA02D0 /* RiddlerApp.swift in Sources */,
+				F216F64B27B4166000DA02D0 /* HintView.swift in Sources */,
+				F21BBAFF27E7E972001FAA31 /* AuthenticateView.swift in Sources */,
+				F2BBD45C27DFFE7200B23075 /* Stats.swift in Sources */,
+				F216F65B27B416CE00DA02D0 /* LottieView.swift in Sources */,
+				F216F64D27B4167100DA02D0 /* RiddleView.swift in Sources */,
+				F216F64527B4162100DA02D0 /* Player.swift in Sources */,
+				F281F60127D98F5D000790B4 /* BasicDialog.swift in Sources */,
+				F23FDD8227D90133008C20A3 /* InterstitialAd.swift in Sources */,
+				F230AF51287E3F6200FF7769 /* Analytics.swift in Sources */,
+				F23FDD8A27D90940008C20A3 /* FullscreenModifier.swift in Sources */,
+				F2BBD45A27DEAB5600B23075 /* StatsView.swift in Sources */,
+				F216F64727B4163100DA02D0 /* GameViewModel.swift in Sources */,
+				F214455927E2694000E8890F /* Background.swift in Sources */,
+				F216F64327B4161400DA02D0 /* Riddle.swift in Sources */,
+				F214455727E267C500E8890F /* BackButton.swift in Sources */,
+				F214454527E009F100E8890F /* Keys.swift in Sources */,
+				F214455D27E2778600E8890F /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F216F63227B40F7F00DA02D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F216F63327B40F7F00DA02D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F216F63527B40F7F00DA02D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F259BF981E79D62D50B11517 /* Pods-Riddler.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"Riddler/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = 36LYYU944F;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Riddler/App/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver personalized ads to you.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = gamekit;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.02;
+				PRODUCT_BUNDLE_IDENTIFIER = me.rddle.riddler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F216F63627B40F7F00DA02D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B3BA99AC2F43B3FE22A1713 /* Pods-Riddler.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"Riddler/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = 36LYYU944F;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Riddler/App/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver personalized ads to you.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = gamekit;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.02;
+				PRODUCT_BUNDLE_IDENTIFIER = me.rddle.riddler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F216F60B27B40F7D00DA02D0 /* Build configuration list for PBXProject "Riddler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F216F63227B40F7F00DA02D0 /* Debug */,
+				F216F63327B40F7F00DA02D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F216F63427B40F7F00DA02D0 /* Build configuration list for PBXNativeTarget "Riddler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F216F63527B40F7F00DA02D0 /* Debug */,
+				F216F63627B40F7F00DA02D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F281F60627DBA40E000790B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		F29A8A3427B6F07400EEF7A3 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F281F60727DBA40F000790B4 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F281F60627DBA40E000790B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		F281F60927DBA40F000790B4 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F281F60627DBA40E000790B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		F29A8A3527B6F07400EEF7A3 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F29A8A3427B6F07400EEF7A3 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F216F60827B40F7D00DA02D0 /* Project object */;
+}
