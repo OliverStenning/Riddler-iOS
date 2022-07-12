@@ -1,7 +1,7 @@
 # Riddler for iOS
 
 <img src="Screenshots/App%20Icon.png" align="right"
-     alt="Size Limit logo by Anton Lovchikov" width="120" height="120">
+     alt="Riddler Icon" width="120" height="120">
 
 Riddler is a native iOS app built in Swift using SwiftUI to be a riddle game. It includes 50 challenging riddles with hints for when you get stuck. The game also contains stat tracking to compare your performance against your friends to see who can answer all 50 riddles the quickest.
 
