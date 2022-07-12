@@ -16,6 +16,6 @@ Check if out on the [App Store](https://apps.apple.com/us/app/riddler-can-you-so
 - Firebase analytics and crashyltics for stability monitoring 
 
 ## How it Looks...
-| Main Menu                          | Question                             | Correct Answer                             |
+| Menu                               | Question                             | Correct Answer                             |
 |------------------------------------|--------------------------------------|--------------------------------------------|
 | ![main list](Screenshots/Menu.png) | ![details](Screenshots/Question.png) | ![second details](Screenshots/Correct.png) |
