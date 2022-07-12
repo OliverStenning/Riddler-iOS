@@ -76,7 +76,7 @@ struct CorrectView: View {
     
     func pressShare() {
         // Log event to Firebase
-        game.copyResultsEvent()
+        copyResultsEvent(player: game.player)
         
         withAnimation(.easeInOut(duration: 0.2)) {
             showShareToast = true

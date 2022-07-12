@@ -50,7 +50,7 @@ class GameViewModel: ObservableObject {
             updateLeaderboard()
             
             // Log event to firebase
-            guessEvent(guess: answer, correct: true)
+            guessEvent(guess: answer, correct: true, player: self.player)
             
             return (true, newAchievements)
         } else {
@@ -58,7 +58,7 @@ class GameViewModel: ObservableObject {
             savePlayer()
             
             // Log event to firebase
-            guessEvent(guess: answer, correct: false)
+            guessEvent(guess: answer, correct: false, player: player)
             
             return (false, false)
         }
@@ -80,7 +80,7 @@ class GameViewModel: ObservableObject {
         savePlayer()
         
         // Log event to firebase
-        useHintEvent()
+        useHintEvent(player: player)
     }
     
     func hintUsable() -> Bool {
@@ -94,7 +94,7 @@ class GameViewModel: ObservableObject {
         savePlayer()
         
         // Log event to firebase
-        unlockHintsEvent()
+        unlockHintsEvent(player: player)
     }
     
     func setRatingAsk() {
@@ -186,114 +186,6 @@ class GameViewModel: ObservableObject {
                     player = decoded
                 }
             }
-        }
-    }
-    
-    // MARK: - Analytics logging
-    func guessEvent(guess: String, correct: Bool) {
-        // Only log events if tracking consented
-        if ConsentManager.shared.userConsentType == ConsentManager.ConsentType.full {
-            Analytics.logEvent("guess", parameters: [
-                "guess" : guess,
-                "correct" : correct,
-                "riddle_num" : player.riddle + 1,
-                "incorrect_guesses" : player.riddleStats[player.riddle].incorrectGuesses,
-                "hints_used" : player.riddleStats[player.riddle].hintsUsed,
-                "time_taken_text" : player.riddleStats[player.riddle].timeString,
-                "time_taken" : player.riddleStats[player.riddle].time
-            ])
-        }
-    }
-    
-    func openHintsEvent() {
-        // Only log events if tracking consented
-        if ConsentManager.shared.userConsentType == ConsentManager.ConsentType.full {
-            Analytics.logEvent("open_hints", parameters: [
-                "hints_used" : player.riddleStats[player.riddle].hintsUsed,
-                "total_hints_used" : player.hintsUsed,
-                "hints_remaining" : player.hints,
-                "riddle_num" : player.riddle,
-                "incorrect_guesses" : player.riddleStats[player.riddle].incorrectGuesses,
-                "time_taken_text" : player.riddleStats[player.riddle].timeString,
-                "time_taken" : player.riddleStats[player.riddle].time
-            ])
-        }
-    }
-    
-    func useHintEvent() {
-        // Only log events if tracking consented
-        if ConsentManager.shared.userConsentType == ConsentManager.ConsentType.full {
-            Analytics.logEvent("use_hint", parameters: [
-                "hints_used" : player.riddleStats[player.riddle].hintsUsed,
-                "total_hints_used" : player.hintsUsed,
-                "hints_remaining" : player.hints,
-                "riddle_num" : player.riddle,
-                "incorrect_guesses" : player.riddleStats[player.riddle].incorrectGuesses,
-                "time_taken_text" : player.riddleStats[player.riddle].timeString,
-                "time_taken" : player.riddleStats[player.riddle].time
-            ])
-        }
-    }
-    
-    func unlockHintsEvent() {
-        // Only log events if tracking consented
-        if ConsentManager.shared.userConsentType == ConsentManager.ConsentType.full {
-            Analytics.logEvent("unlock_hint", parameters: [
-                "hints_used" : player.riddleStats[player.riddle].hintsUsed,
-                "total_hints_used" : player.hintsUsed,
-                "hints_remaining" : player.hints,
-                "riddle_num" : player.riddle,
-                "incorrect_guesses" : player.riddleStats[player.riddle].incorrectGuesses,
-                "time_taken_text" : player.riddleStats[player.riddle].timeString,
-                "time_taken" : player.riddleStats[player.riddle].time
-            ])
-        }
-    }
-    
-    func copyResultsEvent() {
-        // Only log events if tracking consented
-        if ConsentManager.shared.userConsentType == ConsentManager.ConsentType.full {
-            Analytics.logEvent("copy_results", parameters: [
-                "riddle_num" : player.riddle,
-                "guesses" : player.riddleStats[player.riddle - 1].guesses,
-                "hints_used" : player.riddleStats[player.riddle - 1].hintsUsed,
-                "time_taken_text" : player.riddleStats[player.riddle - 1].timeString,
-                "time_taken" : player.riddleStats[player.riddle - 1].time
-            ])
-        }
-    }
-    
-    func victoryEvent() {
-        // Only log events if tracking consented
-        if ConsentManager.shared.userConsentType == ConsentManager.ConsentType.full {
-            Analytics.logEvent("victory", parameters: [
-                "total_hints_used" : player.hintsUsed,
-                "total_guesses" : player.guesses,
-                "time_played_text" : player.timeString,
-                "time_played" : player.time
-            ])
-        }
-    }
-    
-    func openLeaderboardEvent() {
-        // Only log events if tracking consented
-        if ConsentManager.shared.userConsentType == ConsentManager.ConsentType.full {
-            Analytics.logEvent("open_leaderboard", parameters: [
-                "riddle_num" : player.riddle,
-                "time_played_text" : player.timeString,
-                "time_played" : player.time
-            ])
-        }
-    }
-    
-    func openAchievementsEvent() {
-        // Only log events if tracking consented
-        if ConsentManager.shared.userConsentType == ConsentManager.ConsentType.full {
-            Analytics.logEvent("open_achievements", parameters: [
-                "riddle_num" : player.riddle,
-                "time_played_text" : player.timeString,
-                "time_played" : player.time
-            ])
         }
     }
     

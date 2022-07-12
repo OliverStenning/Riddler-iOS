@@ -69,7 +69,7 @@ struct VictoryView: View {
     
     func pressShare() {
         // Log event to firebase
-        game.copyResultsEvent()
+        copyResultsEvent(player: game.player)
         withAnimation(.easeInOut(duration: 0.2)) {
             showShareToast = true
         }

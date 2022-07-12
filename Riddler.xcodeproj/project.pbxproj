@@ -44,6 +44,7 @@
 		F21BBB0327EA457D001FAA31 /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21BBB0227EA457D001FAA31 /* AchievementsView.swift */; };
 		F21BBB0527EA59B6001FAA31 /* GameKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21BBB0427EA59B6001FAA31 /* GameKitManager.swift */; };
 		F21BBB0727EB5919001FAA31 /* TestVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21BBB0627EB5919001FAA31 /* TestVariables.swift */; };
+		F230AF51287E3F6200FF7769 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F230AF50287E3F6200FF7769 /* Analytics.swift */; };
 		F23FDD7927D840CA008C20A3 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F23FDD7827D840CA008C20A3 /* Podfile */; };
 		F23FDD7B27D842B1008C20A3 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23FDD7A27D842B1008C20A3 /* AppTrackingTransparency.framework */; };
 		F23FDD8227D90133008C20A3 /* InterstitialAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FDD8127D90133008C20A3 /* InterstitialAd.swift */; };
@@ -129,6 +130,7 @@
 		F21BBB0227EA457D001FAA31 /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
 		F21BBB0427EA59B6001FAA31 /* GameKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameKitManager.swift; sourceTree = "<group>"; };
 		F21BBB0627EB5919001FAA31 /* TestVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVariables.swift; sourceTree = "<group>"; };
+		F230AF50287E3F6200FF7769 /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
 		F23FDD7827D840CA008C20A3 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F23FDD7A27D842B1008C20A3 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
 		F23FDD8127D90133008C20A3 /* InterstitialAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialAd.swift; sourceTree = "<group>"; };
@@ -305,6 +307,7 @@
 				F216F65C27B416E500DA02D0 /* BundleDecodable.swift */,
 				F2A398E627E60E4B002ADCF3 /* TimeFormatter.swift */,
 				F21BBB0627EB5919001FAA31 /* TestVariables.swift */,
+				F230AF50287E3F6200FF7769 /* Analytics.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -716,6 +719,7 @@
 				F216F64527B4162100DA02D0 /* Player.swift in Sources */,
 				F281F60127D98F5D000790B4 /* BasicDialog.swift in Sources */,
 				F23FDD8227D90133008C20A3 /* InterstitialAd.swift in Sources */,
+				F230AF51287E3F6200FF7769 /* Analytics.swift in Sources */,
 				F23FDD8A27D90940008C20A3 /* FullscreenModifier.swift in Sources */,
 				F2BBD45A27DEAB5600B23075 /* StatsView.swift in Sources */,
 				F216F64727B4163100DA02D0 /* GameViewModel.swift in Sources */,

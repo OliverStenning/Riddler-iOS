@@ -77,13 +77,13 @@ struct MenuView: View {
     
     func pressAchievements() {
         // Log event to firebase
-        game.openAchievementsEvent()
+        openAchievementsEvent(player: game.player)
         showAchievements = true
     }
     
     func pressLeaderboards() {
         // Log event to firebase
-        game.openLeaderboardEvent()
+        openLeaderboardEvent(player: game.player)
         showLeaderboard = true
     }
     

@@ -100,8 +100,7 @@ struct RiddleView: View {
     
     func pressHint() {
         // Log event to firebase
-        game.openHintsEvent()
-
+        openHintsEvent(player: game.player)
         showHints = true
     }
     
