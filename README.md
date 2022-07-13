@@ -23,3 +23,6 @@ Check it out on the [App Store](https://apps.apple.com/us/app/riddler-can-you-so
   <img src="Screenshots/Question.png" width="240" /> 
   <img src="Screenshots/Correct.png" width="240" />
 </p>
+
+## Note
+This respository will not compile out of the box as some files are not included due to including confidential information such as private keys.
