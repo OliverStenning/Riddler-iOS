@@ -10,7 +10,8 @@ Riddler was featured in the **'New games we love'** section of the App Store as 
 Check it out on the [App Store](https://apps.apple.com/us/app/riddler-can-you-solve-it/id1615311096).
 
 ## Note
->This respository will not compile out of the box as some files are not included due to including confidential information such as private keys.
+> This respository will not compile out of the box. Some files are not included due to including confidential information, such as private keys.
+
 
 ## Features
 - UI built programmatically using SwiftUI
