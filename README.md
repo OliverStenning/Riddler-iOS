@@ -9,6 +9,8 @@ Riddler was featured in the **'New games we love'** section of the App Store as 
 
 Check it out on the [App Store](https://apps.apple.com/us/app/riddler-can-you-solve-it/id1615311096).
 
+>This respository will not compile out of the box as some files are not included due to including confidential information such as private keys.
+
 ## Features
 - UI built programmatically using SwiftUI
 - JSON data parsing for persistant user data storage
@@ -23,6 +25,3 @@ Check it out on the [App Store](https://apps.apple.com/us/app/riddler-can-you-so
   <img src="Screenshots/Question.png" width="240" /> 
   <img src="Screenshots/Correct.png" width="240" />
 </p>
-
-## Note
-This respository will not compile out of the box as some files are not included due to including confidential information such as private keys.
