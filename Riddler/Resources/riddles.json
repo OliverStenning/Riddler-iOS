@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "question": "What gets wetter the more it dries?",
+    "answers": [ "towel", "cloth", "flannel" ],
+	"hints": [ "Drying can be done in multiple ways.", "Some things are designed for drying." ]
+  },
+  {
+    "id": 2,
+    "question": "You see me in water but I never get wet. What am I?",
+    "answers": [ "reflection" ],
+    "hints": [ "I look familiar.", "You can see me but you can't touch me." ]
+  },
+  {
+    "id": 3,
+    "question": "What has holes but holds water?",
+    "answers": [ "sponge" ],
+	"hints": [ "Think of materials.", "Often found near sinks." ]
+  },
+  {
+    "id": 4,
+    "question": "What has only two words but thousands of letters?",
+    "answers": [ "post office" ],
+    "hints": [ "There are many kinds of letters.", "All letters pass through it." ]
+  },
+  {
+    "id": 5,
+    "question": "What becomes more useful when broken?",
+    "answers": [ "egg", "glowstick", "glow stick" ],
+    "hints": [ "Think white and yellow.", "Cracking." ]
+  },
+  {
+    "id": 6,
+    "question": "What is harder to catch the faster you run?",
+    "answers": [ "breath" ],
+    "hints": [ "The word catch can be used in many ways." ]
+  },
+  {
+    "id": 7,
+    "question": "What has four fingers and a thumb but is not living?",
+    "answers": [ "glove" ],
+    "hints": [ "Something hollow.", "Something you can wear." ]
+  },
+  {
+    "id": 8,
+    "question": "What has many keys, but can't even open a single door?",
+    "answers": [ "keyboard", "laptop", "computer", "piano" ],
+    "hints": [ "You've used it recently.", "Take a guess and you'll see." ]
+  },
+  {
+    "id": 9,
+    "question": "I can only live where there is light, but I die if the light touches me. What am I?",
+    "answers": [ "shadow" ],
+    "hints": [ "Everything has one in the light.", "Think figuratively." ]
+  },
+  {
+    "id": 10,
+    "question": "Give me food and I will live. Give me water and I will die. What am I?",
+    "answers": [ "fire", "flame" ],
+    "hints": [ "You'll get hurt if you get too close to me.", "You can see and feel me, but you can't touch me." ]
+  },
+  {
+    "id": 11,
+    "question": "I'm tall when I'm young and I'm short when I'm old. What am I?",
+    "answers": [ "candle", "pencil" ],
+    "hints": [ "My use is to burn.", "I hang around on cakes." ]
+  },
+  {
+    "id": 12,
+    "question": "What has hands but cannot clap?",
+    "answers": [ "clock" ],
+    "hints": [ "One hand is shorter.", "It's always pointing." ]
+  },
+  {
+    "id": 13,
+    "question": "What can run but cannot walk?",
+    "answers": [ "water" ],
+    "hints": [ "Think of states.", "You need me to survive." ]
+  },
+  {
+    "id": 14,
+    "question": "What never asks questions but is often answered?",
+    "answers": [ "door", "phone", "doorbell", "mobile","mobile phone", "cell phone", "front door", "cell", "telephone" ],
+    "hints": [ "Questions aren't the only thing you can answer.", "Ring ring." ]
+  },
+  {
+    "id": 15,
+    "question": "What kind of coat can only be put on when wet?",
+    "answers": [ "paint" ],
+    "hints": [ "There are many types of coat.", "You can't wear this type of coat." ]
+  },
+  {
+    "id": 16,
+    "question": "What gets sharper the more you use it?",
+    "answers": [ "brain", "mind" ],
+    "hints": [ "You're using it right now.", "You need it to live." ]
+  },
+  {
+    "id": 17,
+    "question": "If I have it, I don't share it. If I share it, I don't have it. What is it?",
+    "answers": [ "secret" ],
+    "hints": [ "Some people love them, some people hate them.", "Mysterious people may have a lot of them." ]
+  },
+  {
+    "id": 18,
+    "question": "What can you catch but not throw?",
+    "answers": [ "breath", "illness", "cold", "disease" ],
+    "hints": [ "Something no one wants to catch.", "It can have a big effect on your mood." ]
+  },
+  {
+    "id": 19,
+    "question": "What goes up and down but still remains in the same place?",
+    "answers": [ "stairs", "staircase" ],
+    "hints": [ "Most people use them everyday.", "You don't want to fall around them." ]
+  },
+  {
+    "id": 20,
+    "question": "What has a head and a tail but no body?",
+    "answers": [ "coin" ],
+    "hints": [ "It can be flipped.", "Some people use them to make decisions." ]
+  },
+  {
+    "id": 21,
+    "question": "Poor people have it. Rich people need it. If you eat it you die. What is it?",
+    "answers": [ "nothing" ],
+    "hints": [ "Close your eyes and you can see it.", "Even when all else is gone, it remains.", "What's the opposite of everything?" ]
+  },
+  {
+    "id": 22,
+    "question": "What goes up when rain comes down?",
+    "answers": [ "umbrella", "brolly" ],
+    "hints": [ "What do you do when it starts raining?.", "You can get it in a tropical drink." ]
+  },
+  {
+    "id": 23,
+    "question": "What travels around the world but stays in one corner?",
+    "answers": [ "stamp" ],
+    "hints": [ "You decide the destination.", "Highly collectible." ]
+  },
+  {
+    "id": 24,
+    "question": "What is so delicate that saying its name breaks it?",
+    "answers": [ "silence", "quiet" ],
+    "hints": [ "You'll find it in a library.", "You can't hear it." ]
+  },
+  {
+    "id": 25,
+    "question": "What is always coming, but never arrives?",
+    "answers": [ "tomorrow", "future" ],
+    "hints": [ "I'll do it _____.", "Think about time." ]
+  },
+  {
+    "id": 26,
+    "question": "What goes through towns and over hills but never moves?",
+    "answers": [ "road", "path" ],
+	"hints": [ "Vehicles use them.", "Cities have a lot of these." ]
+  },
+  {
+    "id": 27,
+    "question": "What has a neck but no head?",
+    "answers": [ "bottle" ],
+	"hints": [ "It's not living.", "They're hollow when empty." ]
+  },
+  {
+    "id": 28,
+    "question": "What do you throw out when you want to use it, but take back when you are done?",
+    "answers": [ "anchor" ],
+    "hints": [ "They hold you back.", "Sailors use them." ]
+  },
+  {
+    "id": 29,
+    "question": "What flies around all day but never goes anywhere?",
+    "answers": [ "flag" ],
+    "hints": [ "There are different types.", "Every country has one." ]
+  },
+  {
+    "id": 30,
+    "question": "What gets bigger the more you take from it?",
+    "answers": [ "hole" ],
+    "hints": [ "It must be empty to exist.", "You do not want to fall in a deep one.", "You might need a shovel." ]
+  },
+  {
+    "id": 31,
+    "question": "What gets whiter the dirtier it gets?",
+    "answers": [ "chalkboard", "blackboard" ],
+    "hints": [ "They are not used much today.", "They were used in schools.", "Think about chalk." ]
+  },
+  {
+    "id": 32,
+    "question": "What runs around a garden without moving?",
+    "answers": [ "fence", "wall" ],
+    "hints": [ "It can get knocked over or broken.", "There are many forms of running...", "Some are taller than others.", "It is there for privacy." ]
+  },
+  {
+    "id": 33,
+    "question": "He has married many women, but has never been married. Who is he?",
+    "answers": [ "priest", "vicar" ],
+    "hints": [ "He is close to someone but has never met them." ]
+  },
+  {
+    "id": 34,
+    "question": "What has one eye but cannot see?",
+    "answers": [ "needle" ],
+    "hints": [ "They are sharp.", "The size of the eye can vary."]
+  },
+  {
+    "id": 35,
+    "question": "What can you never eat for breakfast?",
+    "answers": [ "dinner", "lunch", "supper", "tea" ],
+    "hints": [ "It's not a specific food.", "It's a fact, not an opinion.", "Think about meals." ]
+  },
+  {
+    "id": 36,
+    "question": "What has a heart but no other organs?",
+    "answers": [ "deck", "card", "deck of cards", "playing cards" ],
+    "hints": [ "The heart is always red.", "It is not living." ]
+  },
+  {
+    "id": 37,
+    "question": "Take off my skin, I won't cry, but you will. What am I?",
+    "answers": [ "onion" ],
+    "hints": [ "It is not alive.", "You'll cry but you won't be sad." ]
+  },
+  {
+    "id": 38,
+    "question": "What is easy to get into, but hard to get out of?",
+    "answers": [ "trouble" ],
+    "hints": [ "If you get into this badly, you could be arrested." ]
+  },
+  {
+    "id": 39,
+    "question": "What has four wheels and flies?",
+    "answers": [ "garbage truck", "rubbish truck", "rubbish lorry" ],
+    "hints": [ "It comes to you once a week.", "It smells really bad." ]
+  },
+  {
+    "id": 40,
+    "question": "What falls often but never gets hurt?",
+    "answers": [ "rain", "snow" ],
+    "hints": [ "It is cold when it falls.", "Sometimes lots of it falls but other times you barely notice it falling at all." ]
+  },
+  {
+    "id": 41,
+    "question": "What is black when you buy it, red when you use it, and grey when you throw it away?",
+    "answers": [ "charcoal", "coal" ],
+    "hints": [ "It can be used for cooking.", "It turns to dust." ]
+  },
+  {
+    "id": 42,
+    "question": "The more of it you take, the more of it you leave behind. What is it?",
+    "answers": [ "footprint", "footstep", "step" ],
+    "hints": [ "Some are larger than others.", "They are easily seen when it is snowing." ]
+  },
+  {
+    "id": 43,
+    "question": "What belongs to you but others use it more than you do?",
+    "answers": [ "name" ],
+    "hints": [ "Everyone has one.", "Everyone allows others to use theirs.", "You rarely use you own." ]
+  },
+  {
+    "id": 44,
+    "question": "I am as light as a feather, yet no man can hold me for long. What am I?",
+    "answers": [ "breath" ],
+    "hints": [ "Some people can hold it longer than others.", "Some smell nice but not all." ]
+  },
+  {
+    "id": 45,
+    "question": "I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?",
+    "answers": [ "map" ],
+    "hints": [ "It guides you.", "It needs to be updated often." ]
+  },
+  {
+    "id": 46,
+    "question": "Many have heard me, but nobody has seen me, and I will not speak back until spoken to. What am I?",
+    "answers": [ "echo" ],
+    "hints": [ "They are not heard everywhere.", "They can only say what you say." ]
+  },
+  {
+    "id": 47,
+    "question": "What tastes better than it smells?",
+    "answers": [ "toungue", "tongue" ],
+    "hints": [ "You use it daily.", "You need it to talk." ]
+  },
+  {
+    "id": 48,
+    "question": "What stays where it is when it goes off?",
+    "answers": [ "alarm", "alarm clock" ],
+    "hints": [ "It goes off in the mornings.", "No one likes having it happen." ]
+  },
+  {
+    "id": 49,
+    "question": "I start with the letter E, I end with the letter E. I contain only one letter, yet I am not the letter E. What am I?",
+    "answers": [ "envelope" ],
+    "hints": [ "Read the riddle carefully.", "There are many forms of letter." ]
+  },
+  {
+    "id": 50,
+    "question": "What building has the most stories?",
+    "answers": [ "library", "bookstore", "bookshop" ],
+    "hints": [ "Stories doesn't just mean floors.", "Knowledge is stored here." ]
+  }
+]

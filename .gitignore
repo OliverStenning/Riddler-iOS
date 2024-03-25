@@ -1,6 +1,6 @@
-Pods/
-Keys.swift
-Info.plist
-riddles.json
-GoogleService-Info.plist
+xcuserdata/
+.build/
 .DS_Store
+Riddler/App/Config/Config.swift
+Riddler/App/Info.plist
+Riddler/GoogleService-Info.plist

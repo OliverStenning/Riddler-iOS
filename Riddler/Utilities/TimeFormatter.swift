@@ -1,63 +1,30 @@
 import Foundation
 
-func timeDifference(startTime: Date, endTime: Date) -> Int {
-    let timeDifference = Calendar.current.dateComponents([.second], from: startTime, to: endTime)
-    return timeDifference.second ?? 0
-}
+enum TimeFormatter {
 
-func timeDifferenceString(startTime: Date, endTime: Date) -> String {
-    var timeString = ""
-    var timeArray: [String] = []
-    
-    let timeDifference = Calendar.current.dateComponents([.year, .day, .hour, .minute, .second], from: startTime, to: endTime)
-    
-    let years = timeDifference.year ?? 0
-    let days = timeDifference.day ?? 0
-    let hours = timeDifference.hour ?? 0
-    let minutes = timeDifference.minute ?? 0
-    let seconds = timeDifference.second ?? 0
-    
-    if years > 0 {
-        if years == 1 {
-            timeArray.append("\(years) year")
-        } else {
-            timeArray.append("\(years) years")
-        }
-    }
-    
-    if days > 0 {
-        if days == 1 {
-            timeArray.append("\(days) day")
-        } else {
-            timeArray.append("\(days) days")
-        }
-    }
-    
-    if hours > 0 {
-        if hours == 1 {
-            timeArray.append("\(hours) hr")
-        } else {
-            timeArray.append("\(hours) hrs")
-        }
-    }
-    
-    if minutes > 0 {
-        timeArray.append("\(minutes) min")
-    }
-    
-    if seconds > 0 {
-        timeArray.append("\(seconds) sec")
-    }
-    
-    while timeArray.count > 2 {
-        timeArray.removeLast()
-    }
-    
-    timeString = timeArray.joined(separator: ", ")
-    
-    if timeString == "" {
-        timeString = "1 sec"
-    }
-    
-    return timeString
+	// MARK: Internal
+
+	static func timeDifference(from startTime: Date, to endTime: Date) -> String {
+		let timeDifference = Calendar.current.dateComponents([.year, .day, .hour, .minute, .second], from: startTime, to: endTime)
+
+		let components: [String?] = [
+			format(unitValue: timeDifference.year ?? 0, unitName: "year"),
+			format(unitValue: timeDifference.day ?? 0, unitName: "day"),
+			format(unitValue: timeDifference.hour ?? 0, unitName: "hr"),
+			format(unitValue: timeDifference.minute ?? 0, unitName: "min"),
+			format(unitValue: timeDifference.second ?? 0, unitName: "sec")
+		]
+
+		let timeArray = components.compactMap { $0 }.prefix(2)
+		let timeString = timeArray.joined(separator: ", ")
+		return timeString.isEmpty ? "0 sec" : timeString
+	}
+
+	// MARK: Private
+
+	private static func format(unitValue: Int, unitName: String) -> String? {
+		guard unitValue != 0 else { return nil }
+		return "\(unitValue) \(unitName)\(unitValue == 1 ? "" : "s")"
+	}
+
 }

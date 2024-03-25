@@ -1,0 +1,17 @@
+fonts:
+  - inputs: Riddler/Resources/Fonts
+    outputs:
+      - templateName: swift5
+        params:
+          enumName: RKFonts
+          publicAccess:
+        output: Riddler/Generated/Fonts+Generated.swift
+
+xcassets:
+  - inputs: Riddler/Resources/Colors.xcassets
+    outputs:
+      - templateName: swift5
+        params:
+          enumName: RKColors
+          publicAccess:
+        output: Riddler/Generated/Colors+Generated.swift
