@@ -95,7 +95,7 @@ final class GameplayManager: ObservableObject {
 
 	func handleGameCenterAuthenticated() {
 		gameCenterManager.setCurrentAchievements(player.achievements)
-		gameCenterManager.updateLeaderboard(newScore: player.currentRiddleIndex + 1)
+		gameCenterManager.updateLeaderboard(newScore: riddleLeaderboardScore)
 	}
 
 	// MARK: - Riddle
@@ -125,7 +125,8 @@ final class GameplayManager: ObservableObject {
 			player.currentRiddleHintsUsed = 0
 		}
 
-		gameCenterManager.updateLeaderboard(newScore: player.currentRiddleIndex + 1)
+		
+		gameCenterManager.updateLeaderboard(newScore: riddleLeaderboardScore)
 		if let lastRiddleStats = player.riddleStats.last {
 			let updatedAchievements = gameCenterManager.handleAchiementUpdates(
 				currentAchievements: player.achievements,
@@ -256,6 +257,10 @@ final class GameplayManager: ObservableObject {
 			guard let timeInterval else { return }
 			userDefaults.set(timeInterval, forKey: lastAppStoreReviewPromptKey)
 		}
+	}
+	
+	private var riddleLeaderboardScore: Int {
+		min(riddles.count, player.currentRiddleIndex + 1)
 	}
 
 	private func handleCorrectGuess(_ guess: String) {
