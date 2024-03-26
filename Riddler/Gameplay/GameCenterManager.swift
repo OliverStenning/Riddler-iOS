@@ -59,7 +59,7 @@ struct GameCenterManager {
 		case riddles20 = "riddles_20"
 		case riddles10 = "riddles_10"
 		case riddles5 = "riddles_5"
-		case riddlesFirst = "riddles_first"
+		case riddlesFirst = "riddle_first"
 		case under5Minutes = "under_5_minutes"
 		case noHelp = "no_help"
 		case firstTry = "first_try"

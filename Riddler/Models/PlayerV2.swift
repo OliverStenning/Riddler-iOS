@@ -37,6 +37,12 @@ struct PlayerV2: Codable {
 		achievements = playerV1.achievements.mapValues { isAchieved in
 			isAchieved ? 100.0 : 0.0
 		}
+		
+		let brokenAchievementKey = "riddles_first"
+		let correctAchievementKey = "riddle_first"
+		
+		achievements[correctAchievementKey] = achievements[brokenAchievementKey]
+		achievements.removeValue(forKey: brokenAchievementKey)
 	}
 
 	// MARK: Internal
