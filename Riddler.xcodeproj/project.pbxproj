@@ -46,6 +46,7 @@
 		A7CD09B82BB1BA2B006F71E2 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CD09B72BB1BA2B006F71E2 /* View+Extensions.swift */; };
 		A7CD09C02BB1E338006F71E2 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CD09BF2BB1E338006F71E2 /* Config.swift */; };
 		A7CE6A9C2B8B776B00FA9169 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = A7CE6A9B2B8B776B00FA9169 /* GoogleMobileAds */; };
+		A7F017662BB24A430059EA89 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A7F017652BB24A430059EA89 /* PrivacyInfo.xcprivacy */; };
 		A7F07A2D2B8D31550028269E /* Fonts+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F07A2C2B8D31550028269E /* Fonts+Generated.swift */; };
 		A7F07A2F2B8D418A0028269E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7F07A2E2B8D418A0028269E /* Colors.xcassets */; };
 		A7F07A312B8D42240028269E /* Colors+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F07A302B8D42240028269E /* Colors+Generated.swift */; };
@@ -122,6 +123,7 @@
 		A7CD09B52BB1B989006F71E2 /* Analytics+Screens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Analytics+Screens.swift"; sourceTree = "<group>"; };
 		A7CD09B72BB1BA2B006F71E2 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		A7CD09BF2BB1E338006F71E2 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		A7F017652BB24A430059EA89 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		A7F07A2C2B8D31550028269E /* Fonts+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fonts+Generated.swift"; sourceTree = "<group>"; };
 		A7F07A2E2B8D418A0028269E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		A7F07A302B8D42240028269E /* Colors+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Colors+Generated.swift"; sourceTree = "<group>"; };
@@ -308,6 +310,7 @@
 				A7C3DA9E2B8BD2320045E2E7 /* AppSetupManager.swift */,
 				F216F61327B40F7D00DA02D0 /* RiddlerApp.swift */,
 				A7C3DA792B8B7ACE0045E2E7 /* Info.plist */,
+				A7F017652BB24A430059EA89 /* PrivacyInfo.xcprivacy */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7F07A2F2B8D418A0028269E /* Colors.xcassets in Resources */,
+				A7F017662BB24A430059EA89 /* PrivacyInfo.xcprivacy in Resources */,
 				F29A8A2F27B460AE00EEF7A3 /* Abel-Regular.ttf in Resources */,
 				F216F61B27B40F7F00DA02D0 /* Preview Assets.xcassets in Resources */,
 				F29A8A3327B48B0000EEF7A3 /* riddles.json in Resources */,
