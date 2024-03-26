@@ -33,6 +33,7 @@ class AdsManager {
 		GADMobileAds.sharedInstance().start { [weak self] _ in
 			guard let self else { return }
 			isSDKSetup = true
+			GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = Config.adMobTestDevices
 
 			InterstitialAd.shared.loadAd()
 			RewardedAd.shared.loadAd()

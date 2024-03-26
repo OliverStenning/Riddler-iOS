@@ -16,4 +16,6 @@ enum ExampleConfig {
 	static let interstitialAdUnitId: String = "ca-app-pub-3940256099942544/4411468910"
 	static let rewardedAdUnitId: String = "ca-app-pub-3940256099942544/1712485313"
 
+	static let adMobTestDevices: [String] = []
+
 }
