@@ -42,7 +42,7 @@ struct SettingsView: View {
 
 				Spacer()
 
-				Text("v1.1.0")
+				Text("v1.4.0")
 					.font(.custom("Abel-Regular", size: 20))
 					.foregroundStyle(RKColors.accent.swiftUIColor)
 					.onTapGesture(count: 5, perform: openDebugMenuTapped)
