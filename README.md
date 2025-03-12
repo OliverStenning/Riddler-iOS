@@ -6,7 +6,7 @@ Riddler is a riddle game built as a native iOS app in Swift using SwiftUI. It in
 
 Riddler was featured in the **'New games we love'** section of the App Store as well as reaching **No. 28** in the **'Word'** game chart.
 
-Check it out on the [App Store](https://apps.apple.com/us/app/riddler-can-you-solve-it/id1615311096).
+[![Download on the App Store](https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg)](https://apps.apple.com/us/app/riddler-can-you-solve-it/id1615311096)
 
 ## Before Building
 > This respository will not compile out of the box. I have excluded the `Info.plist` and `Config.swift` files as they contain private API keys.
