@@ -771,7 +771,7 @@
 			repositoryURL = "https://github.com/PostHog/posthog-ios.git";
 			requirement = {
 				kind = exactVersion;
-				version = 3.2.4;
+				version = 3.25.0;
 			};
 		};
 		A7CE6A9A2B8B776B00FA9169 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
