@@ -30,13 +30,13 @@ class AdsManager {
 		guard !isSDKSetup, Config.admobEnabled else { return }
 
 		Logger.consent.info("Starting Mobile Ads SDK")
-		GADMobileAds.sharedInstance().start { [weak self] _ in
+		MobileAds.shared.start { [weak self] _ in
 			guard let self else { return }
 			isSDKSetup = true
-			GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = Config.adMobTestDevices
+			MobileAds.shared.requestConfiguration.testDeviceIdentifiers = Config.adMobTestDevices
 
-			InterstitialAd.shared.loadAd()
-			RewardedAd.shared.loadAd()
+			RDInterstitialAd.shared.loadAd()
+			RDRewardedAd.shared.loadAd()
 		}
 	}
 }

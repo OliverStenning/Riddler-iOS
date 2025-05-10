@@ -1,4 +1,5 @@
 {
+  "originHash" : "301a474074258cbab0b953a530de18ff63be603c4ed988bf8bc0e58558b1f5cc",
   "pins" : [
     {
       "identity" : "posthog-ios",
@@ -23,8 +24,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
       "state" : {
-        "revision" : "5ff977255c2ba5844e7e9da779f1f2a5a00e0028",
-        "version" : "11.2.0"
+        "revision" : "1f4e2201d986617a834326ad481be747ab481570",
+        "version" : "12.4.0"
       }
     },
     {
@@ -46,5 +47,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

@@ -2,17 +2,17 @@ import GoogleMobileAds
 import OSLog
 import SwiftUI
 
-class InterstitialAd: NSObject {
+class RDInterstitialAd: NSObject {
 
 	// MARK: Internal
 
-	static let shared = InterstitialAd()
+	static let shared = RDInterstitialAd()
 
-	var interstitialAd: GADInterstitialAd?
+	var interstitialAd: InterstitialAd?
 
 	func loadAd() {
-		let request = GADRequest()
-		GADInterstitialAd.load(withAdUnitID: adUnitId, request: request) { interstitialAd, error in
+		let request = Request()
+		InterstitialAd.load(with: adUnitId, request: request) { interstitialAd, error in
 			if let error {
 				Logger.ads.error("Failed to load ad with error: \(error)")
 				return
