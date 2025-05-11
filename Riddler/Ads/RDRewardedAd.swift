@@ -3,19 +3,19 @@ import GoogleMobileAds
 import OSLog
 import SwiftUI
 
-class RewardedAd: NSObject {
+class RDRewardedAd: NSObject {
 
 	// MARK: Internal
 
-	static let shared = RewardedAd()
+	static let shared = RDRewardedAd()
 
-	var rewardedAd: GADRewardedAd?
+	var rewardedAd: RewardedAd?
 
 	var adLoadedPublisher = PassthroughSubject<Void, Never>()
 
 	func loadAd() {
-		let request = GADRequest()
-		GADRewardedAd.load(withAdUnitID: adUnitId, request: request) { rewardedAd, error in
+		let request = Request()
+		RewardedAd.load(with: adUnitId, request: request) { rewardedAd, error in
 			if let error {
 				Logger.ads.error("Failed to load rewarded ad with error: \(error)")
 				return

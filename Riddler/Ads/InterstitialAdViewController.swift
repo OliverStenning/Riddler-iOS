@@ -10,7 +10,7 @@ class InterstitialAdViewController: UIViewController {
 	// MARK: Lifecycle
 
 	init(completion: @escaping () -> Void) {
-		interstitialAd = InterstitialAd.shared.interstitialAd
+		interstitialAd = RDInterstitialAd.shared.interstitialAd
 		self.completion = completion
 		super.init(nibName: nil, bundle: nil)
 		interstitialAd?.fullScreenContentDelegate = self
@@ -30,7 +30,7 @@ class InterstitialAdViewController: UIViewController {
 			Logger.ads.info("Presenting interstitial ad")
 			Analytics.shared.screen(.interstitialAd())
 			hasShownAd = true
-			interstitialAd.present(fromRootViewController: self)
+			interstitialAd.present(from: self)
 		} else {
 			Logger.ads.error("Tried to show interstitial ad when it wasn't loaded")
 			completion()
@@ -39,7 +39,7 @@ class InterstitialAdViewController: UIViewController {
 
 	// MARK: Private
 
-	private let interstitialAd: GADInterstitialAd?
+	private let interstitialAd: InterstitialAd?
 
 	private let completion: () -> Void
 
@@ -49,17 +49,17 @@ class InterstitialAdViewController: UIViewController {
 
 // MARK: GADFullScreenContentDelegate
 
-extension InterstitialAdViewController: GADFullScreenContentDelegate {
+extension InterstitialAdViewController: FullScreenContentDelegate {
 
-	func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+	func adDidDismissFullScreenContent(_ ad: FullScreenPresentingAd) {
 		Logger.ads.info("Add finished displaying")
-		InterstitialAd.shared.loadAd()
+		RDInterstitialAd.shared.loadAd()
 		completion()
 	}
 
-	func ad(_ ad: GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
+	func ad(_ ad: FullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
 		Logger.ads.error("Ad failed to present with error: \(error)")
-		InterstitialAd.shared.loadAd()
+		RDInterstitialAd.shared.loadAd()
 		completion()
 	}
 

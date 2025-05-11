@@ -13,10 +13,10 @@
 		A77063272BB0781300AB686D /* AdsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77063262BB0781300AB686D /* AdsManager.swift */; };
 		A77063292BB079CB00AB686D /* UMPPrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77063282BB079CB00AB686D /* UMPPrivacyView.swift */; };
 		A770632B2BB079EB00AB686D /* UMPPrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A770632A2BB079EB00AB686D /* UMPPrivacyViewController.swift */; };
-		A770632D2BB0813B00AB686D /* InterstitialAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = A770632C2BB0813B00AB686D /* InterstitialAd.swift */; };
+		A770632D2BB0813B00AB686D /* RDInterstitialAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = A770632C2BB0813B00AB686D /* RDInterstitialAd.swift */; };
 		A770632F2BB0822200AB686D /* InterstitialAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A770632E2BB0822200AB686D /* InterstitialAdView.swift */; };
 		A77063312BB0824E00AB686D /* InterstitialAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77063302BB0824E00AB686D /* InterstitialAdViewController.swift */; };
-		A77063332BB0E47F00AB686D /* RewardedAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77063322BB0E47F00AB686D /* RewardedAd.swift */; };
+		A77063332BB0E47F00AB686D /* RDRewardedAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77063322BB0E47F00AB686D /* RDRewardedAd.swift */; };
 		A77063352BB0E6A300AB686D /* RewardedAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77063342BB0E6A300AB686D /* RewardedAdView.swift */; };
 		A77063372BB0E6B800AB686D /* RewardedAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77063362BB0E6B800AB686D /* RewardedAdViewController.swift */; };
 		A7878B332B9133A5007D5F7A /* PlayerV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7878B322B9133A5007D5F7A /* PlayerV2.swift */; };
@@ -90,10 +90,10 @@
 		A77063262BB0781300AB686D /* AdsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsManager.swift; sourceTree = "<group>"; };
 		A77063282BB079CB00AB686D /* UMPPrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMPPrivacyView.swift; sourceTree = "<group>"; };
 		A770632A2BB079EB00AB686D /* UMPPrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMPPrivacyViewController.swift; sourceTree = "<group>"; };
-		A770632C2BB0813B00AB686D /* InterstitialAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialAd.swift; sourceTree = "<group>"; };
+		A770632C2BB0813B00AB686D /* RDInterstitialAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDInterstitialAd.swift; sourceTree = "<group>"; };
 		A770632E2BB0822200AB686D /* InterstitialAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialAdView.swift; sourceTree = "<group>"; };
 		A77063302BB0824E00AB686D /* InterstitialAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialAdViewController.swift; sourceTree = "<group>"; };
-		A77063322BB0E47F00AB686D /* RewardedAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardedAd.swift; sourceTree = "<group>"; };
+		A77063322BB0E47F00AB686D /* RDRewardedAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDRewardedAd.swift; sourceTree = "<group>"; };
 		A77063342BB0E6A300AB686D /* RewardedAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardedAdView.swift; sourceTree = "<group>"; };
 		A77063362BB0E6B800AB686D /* RewardedAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardedAdViewController.swift; sourceTree = "<group>"; };
 		A7878B322B9133A5007D5F7A /* PlayerV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerV2.swift; sourceTree = "<group>"; };
@@ -184,10 +184,10 @@
 				A77063262BB0781300AB686D /* AdsManager.swift */,
 				A77063282BB079CB00AB686D /* UMPPrivacyView.swift */,
 				A770632A2BB079EB00AB686D /* UMPPrivacyViewController.swift */,
-				A770632C2BB0813B00AB686D /* InterstitialAd.swift */,
+				A770632C2BB0813B00AB686D /* RDInterstitialAd.swift */,
 				A770632E2BB0822200AB686D /* InterstitialAdView.swift */,
 				A77063302BB0824E00AB686D /* InterstitialAdViewController.swift */,
-				A77063322BB0E47F00AB686D /* RewardedAd.swift */,
+				A77063322BB0E47F00AB686D /* RDRewardedAd.swift */,
 				A77063342BB0E6A300AB686D /* RewardedAdView.swift */,
 				A77063362BB0E6B800AB686D /* RewardedAdViewController.swift */,
 			);
@@ -491,7 +491,7 @@
 				F214456727E4E5B400E8890F /* RKToast.swift in Sources */,
 				A7B8D5D82B936E900013E402 /* Array+Extensions.swift in Sources */,
 				F21BBB0327EA457D001FAA31 /* GKAchievementsView.swift in Sources */,
-				A770632D2BB0813B00AB686D /* InterstitialAd.swift in Sources */,
+				A770632D2BB0813B00AB686D /* RDInterstitialAd.swift in Sources */,
 				F216F65127B4168800DA02D0 /* CorrectView.swift in Sources */,
 				A7C3DA9D2B8BD1AA0045E2E7 /* AppDelegate.swift in Sources */,
 				A7F07A312B8D42240028269E /* Colors+Generated.swift in Sources */,
@@ -511,7 +511,7 @@
 				F216F64B27B4166000DA02D0 /* HintView.swift in Sources */,
 				A77063352BB0E6A300AB686D /* RewardedAdView.swift in Sources */,
 				A7CD09C02BB1E338006F71E2 /* Config.swift in Sources */,
-				A77063332BB0E47F00AB686D /* RewardedAd.swift in Sources */,
+				A77063332BB0E47F00AB686D /* RDRewardedAd.swift in Sources */,
 				A7C3DAA82B8BDA910045E2E7 /* GKAuthenticationView.swift in Sources */,
 				A77063372BB0E6B800AB686D /* RewardedAdViewController.swift in Sources */,
 				A77063312BB0824E00AB686D /* InterstitialAdViewController.swift in Sources */,
@@ -771,7 +771,7 @@
 			repositoryURL = "https://github.com/PostHog/posthog-ios.git";
 			requirement = {
 				kind = exactVersion;
-				version = 3.2.4;
+				version = 3.25.0;
 			};
 		};
 		A7CE6A9A2B8B776B00FA9169 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
@@ -779,7 +779,7 @@
 			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
 			requirement = {
 				kind = exactVersion;
-				version = 11.2.0;
+				version = 12.4.0;
 			};
 		};
 		A7F07A382B8D61900028269E /* XCRemoteSwiftPackageReference "Pow" */ = {
@@ -787,7 +787,7 @@
 			repositoryURL = "https://github.com/EmergeTools/Pow.git";
 			requirement = {
 				kind = exactVersion;
-				version = 1.0.3;
+				version = 1.0.5;
 			};
 		};
 		A7F07A3B2B8D637A0028269E /* XCRemoteSwiftPackageReference "Vortex" */ = {
@@ -795,7 +795,7 @@
 			repositoryURL = "https://github.com/twostraws/Vortex";
 			requirement = {
 				kind = exactVersion;
-				version = 1.0.0;
+				version = 1.0.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

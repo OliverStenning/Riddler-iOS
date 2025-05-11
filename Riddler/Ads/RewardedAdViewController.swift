@@ -10,7 +10,7 @@ class RewardedAdViewController: UIViewController {
 	// MARK: Lifecycle
 
 	init(rewardHandler: @escaping () -> Void, completion: @escaping () -> Void) {
-		rewardedAd = RewardedAd.shared.rewardedAd
+		rewardedAd = RDRewardedAd.shared.rewardedAd
 		self.rewardHandler = rewardHandler
 		self.completion = completion
 		super.init(nibName: nil, bundle: nil)
@@ -31,7 +31,7 @@ class RewardedAdViewController: UIViewController {
 			Logger.ads.info("Presenting rewarded ad")
 			Analytics.shared.screen(.rewardedAd())
 			hasShownAd = true
-			rewardedAd.present(fromRootViewController: self, userDidEarnRewardHandler: rewardHandler)
+			rewardedAd.present(from: self, userDidEarnRewardHandler: rewardHandler)
 		} else {
 			Logger.ads.error("Tried to show rewarded ad when it wasn't loaded")
 			completion()
@@ -40,7 +40,7 @@ class RewardedAdViewController: UIViewController {
 
 	// MARK: Private
 
-	private let rewardedAd: GADRewardedAd?
+	private let rewardedAd: RewardedAd?
 
 	private let rewardHandler: () -> Void
 	private let completion: () -> Void
@@ -51,17 +51,17 @@ class RewardedAdViewController: UIViewController {
 
 // MARK: GADFullScreenContentDelegate
 
-extension RewardedAdViewController: GADFullScreenContentDelegate {
+extension RewardedAdViewController: FullScreenContentDelegate {
 
-	func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+	func adDidDismissFullScreenContent(_ ad: FullScreenPresentingAd) {
 		Logger.ads.info("Rewarded ad finished displaying")
-		RewardedAd.shared.loadAd()
+		RDRewardedAd.shared.loadAd()
 		completion()
 	}
 
-	func ad(_ ad: GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
+	func ad(_ ad: FullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
 		Logger.ads.error("Rewarded ad failed to present with error: \(error)")
-		RewardedAd.shared.loadAd()
+		RDRewardedAd.shared.loadAd()
 		completion()
 	}
 
