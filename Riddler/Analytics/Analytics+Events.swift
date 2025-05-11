@@ -62,6 +62,14 @@ extension AnalyticsEvent {
 		.init(name: "Tap get more hints", properties: ["numberOfHints": numberOfHints])
 	}
 
+	static func tapCloseGetMoreHintsDialog(numberOfHints: Int) -> Self {
+		.init(name: "Tap close get more hints dialog", properties: ["numberOfHints": numberOfHints])
+	}
+
+	static func tapWatchRewardedAd(numberOfHints: Int) -> Self {
+		.init(name: "Tap watch rewarded ad", properties: ["numberOfHints": numberOfHints])
+	}
+
 	// MARK: - Correct
 
 	static func tapOpenSuggestDialog() -> Self {

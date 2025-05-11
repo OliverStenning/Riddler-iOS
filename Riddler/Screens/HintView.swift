@@ -20,9 +20,20 @@ struct HintView: View {
 			HStack {
 				RKButton(title: buttonString, size: .fill, action: game.useHint)
 				if game.canRequestMoreHints {
-					RKIconButton(icon: Image(systemName: "plus"), action: game.requestHints)
+					RKIconButton(icon: Image(systemName: "plus"), action: addHintsTapped)
 				}
 			}
+		}
+		.sheet(isPresented: $showAddHintsSheet, onDismiss: addHintsSheetDismissed) {
+			RKBottomSheetPrompt(
+				titleText: "Unlock more hints?",
+				bodyText: "Watch a short ad to unlock 3 hints.",
+				primaryText: "Watch",
+				secondaryText: "Close",
+				primaryAction: watchAdTapped,
+				secondaryAction: closeAddHintsSheetTapped
+			)
+			.presentationDetents([.fraction(0.3)])
 		}
 		.toolbar {
 			ToolbarItem(placement: .principal) {
@@ -46,8 +57,33 @@ struct HintView: View {
 
 	// MARK: Private
 
+	@State private var showAddHintsSheet: Bool = false
+	@State private var requestRewardedAdAfterDismiss: Bool = false
+
 	private var buttonString: String {
 		game.player.hintsAvailable == 0 ? "Out of hints" : "Use hint: \(game.player.hintsAvailable) remaining"
+	}
+
+	private func addHintsTapped() {
+		Analytics.shared.event(.tapGetMoreHints(numberOfHints: game.player.hintsAvailable))
+		showAddHintsSheet = true
+	}
+
+	private func closeAddHintsSheetTapped() {
+		Analytics.shared.event(.tapCloseGetMoreHintsDialog(numberOfHints: game.player.hintsAvailable))
+		showAddHintsSheet = false
+	}
+
+	private func watchAdTapped() {
+		Analytics.shared.event(.tapWatchRewardedAd(numberOfHints: game.player.hintsAvailable))
+		requestRewardedAdAfterDismiss = true
+		showAddHintsSheet = false
+	}
+
+	private func addHintsSheetDismissed() {
+		guard requestRewardedAdAfterDismiss else { return }
+		game.requestHints()
+		requestRewardedAdAfterDismiss = false
 	}
 
 }

@@ -74,7 +74,7 @@ final class GameplayManager: ObservableObject {
 	}
 
 	var canRequestMoreHints: Bool {
-		AdsManager.shared.hasConsented
+		AdsManager.shared.hasConsented && RDRewardedAd.shared.rewardedAd != nil
 	}
 
 	var victoryStats: [DisplayStat] {
@@ -176,7 +176,6 @@ final class GameplayManager: ObservableObject {
 	}
 
 	func requestHints() {
-		Analytics.shared.event(.tapGetMoreHints(numberOfHints: player.hintsAvailable))
 		showRewardedAd = true
 	}
 
